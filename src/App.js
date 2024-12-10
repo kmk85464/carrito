@@ -28,7 +28,7 @@ const App = () => {
           {items.map((item) => (
             <div key={item.id} className="item">
               <h3>{item.name}</h3>
-              <p>Precio: ${item.price.toFixed(2)}</p>
+              <p>Precio: ${item.price ? item.price.toFixed(2) : "N/A"}</p>
               <button onClick={() => addToCart(item)}>Añadir al carrito</button>
             </div>
           ))}
@@ -45,6 +45,7 @@ const App = () => {
                 {cart.map((item, index) => (
                   <li key={index}>
                     {item.name} - ${item.price.toFixed(2)}
+                    item.price.toFixed(2) : "N/A"
                   </li>
                 ))}
               </ul>
