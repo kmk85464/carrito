@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./App.css";
-import items from "./items.json"; // Importa el archivo JSON
+import items from "./articulos_navideños.json"; // Importa el archivo JSON
 
 const App = () => {
   const [cart, setCart] = useState([]);
